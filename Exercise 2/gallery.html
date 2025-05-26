@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Image Gallery</h1>
+    <nav class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="landscapes">Landscapes</button>
+      <button class="filter-btn" data-filter="portraits">Portraits</button>
+      <button class="filter-btn" data-filter="architecture">Architecture</button>
+    </nav>
+  </header>
+
+  <main class="gallery-grid">
+    
+    <div class="card landscapes">
+      <img src="https://cdn.pixabay.com/photo/2020/12/23/08/00/bow-lake-5854210_1280.jpg" alt="Mountain Landscape" />
+      <div class="card-info">
+        <h3>Mountain Landscape</h3>
+        <span class="category-tag">Landscapes</span>
+      </div>
+      <div class="overlay">
+        <p>A breathtaking mountain view with a serene lake.</p>
+      </div>
+    </div>
+
+    <div class="card landscapes">
+      <img src="https://cdn.pixabay.com/photo/2020/07/10/20/25/wheat-field-5392067_1280.jpg" alt="Field" />
+      <div class="card-info">
+        <h3>Golden Field</h3>
+        <span class="category-tag">Landscapes</span>
+      </div>
+      <div class="overlay">
+        <p>Golden wheat fields under a cloudy sky.</p>
+      </div>
+    </div>
+
+    <div class="card landscapes">
+      <img src="https://cdn.pixabay.com/photo/2022/04/23/17/16/cascade-7152189_1280.jpg" alt="Waterfall" />
+      <div class="card-info">
+        <h3>Waterfall</h3>
+        <span class="category-tag">Landscapes</span>
+      </div>
+      <div class="overlay">
+        <p>Majestic waterfall flowing through the forest.</p>
+      </div>
+    </div>
+
+  
+    <div class="card portraits">
+      <img src="https://cdn.pixabay.com/photo/2018/08/04/20/48/woman-3584435_1280.jpg" alt="Woman Portrait" />
+      <div class="card-info">
+        <h3>Woman Portrait</h3>
+        <span class="category-tag">Portraits</span>
+      </div>
+      <div class="overlay">
+        <p>A thoughtful woman captured in natural light.</p>
+      </div>
+    </div>
+
+    <div class="card portraits">
+      <img src="https://cdn.pixabay.com/photo/2017/06/26/02/47/man-2442565_1280.jpg" alt="Man Portrait" />
+      <div class="card-info">
+        <h3>Man Portrait</h3>
+        <span class="category-tag">Portraits</span>
+      </div>
+      <div class="overlay">
+        <p>A black and white portrait of a man.</p>
+      </div>
+    </div>
+
+    <div class="card portraits">
+      <img src="https://cdn.pixabay.com/photo/2020/05/24/10/36/child-5213589_1280.jpg" alt="Girl Portrait" />
+      <div class="card-info">
+        <h3>Girl Portrait</h3>
+        <span class="category-tag">Portraits</span>
+      </div>
+      <div class="overlay">
+        <p>Young girl smiling in a candid moment.</p>
+      </div>
+    </div>
+
+
+    <div class="card architecture">
+      <img src="https://cdn.pixabay.com/photo/2018/01/31/23/25/skyscraper-3122210_1280.jpg" alt="Modern Buildings" />
+      <div class="card-info">
+        <h3>Modern Buildings</h3>
+        <span class="category-tag">Architecture</span>
+      </div>
+      <div class="overlay">
+        <p>Skyscrapers with modern glass architecture.</p>
+      </div>
+    </div>
+
+    <div class="card architecture">
+      <img src="https://cdn.pixabay.com/photo/2015/05/29/19/18/architecture-789636_1280.jpg" alt="Old Building" />
+      <div class="card-info">
+        <h3>Old Building</h3>
+        <span class="category-tag">Architecture</span>
+      </div>
+      <div class="overlay">
+        <p>Historic architecture with ornate details.</p>
+      </div>
+    </div>
+
+    <div class="card architecture">
+      <img src="https://cdn.pixabay.com/photo/2018/08/19/16/57/vasco-de-gama-3617112_1280.jpg" alt="Bridge" />
+      <div class="card-info">
+        <h3>Bridge</h3>
+        <span class="category-tag">Architecture</span>
+      </div>
+      <div class="overlay">
+        <p>A large bridge spanning across a river.</p>
+      </div>
+    </div>
+
+    <div class="card landscapes">
+      <img src="https://cdn.pixabay.com/photo/2020/07/08/08/04/sunset-5383043_1280.jpg" alt="Beach Sunset" />
+      <div class="card-info">
+        <h3>Beach Sunset</h3>
+        <span class="category-tag">Landscapes</span>
+      </div>
+      <div class="overlay">
+        <p>Sunset view over the calm beach.</p>
+      </div>
+    </div>
+
+    <div class="card portraits">
+      <img src="https://cdn.pixabay.com/photo/2017/08/30/12/18/kid-2696865_1280.jpg" alt="Child Portrait" />
+      <div class="card-info">
+        <h3>Child Portrait</h3>
+        <span class="category-tag">Portraits</span>
+      </div>
+      <div class="overlay">
+        <p>Child smiling happily outdoors.</p>
+      </div>
+    </div>
+
+    <div class="card architecture">
+      <img src="https://cdn.pixabay.com/photo/2020/10/09/20/09/library-5641389_1280.jpg" alt="Modern Interior" />
+      <div class="card-info">
+        <h3>Modern Interior</h3>
+        <span class="category-tag">Architecture</span>
+      </div>
+      <div class="overlay">
+        <p>Sleek and modern building interior design.</p>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const buttons = document.querySelectorAll(".filter-btn");
+    const cards = document.querySelectorAll(".card");
+
+    buttons.forEach(button => {
+      button.addEventListener("click", () => {
+        
+        buttons.forEach(btn => btn.classList.remove("active"));
+        button.classList.add("active");
+
+        const filter = button.getAttribute("data-filter");
+
+        cards.forEach(card => {
+          if (filter === "all") {
+            card.style.display = "block";
+            card.style.opacity = "1";
+          } else if (card.classList.contains(filter)) {
+            card.style.display = "block";
+            setTimeout(() => (card.style.opacity = "1"), 10);
+          } else {
+            card.style.opacity = "0";
+            setTimeout(() => (card.style.display = "none"), 300);
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
