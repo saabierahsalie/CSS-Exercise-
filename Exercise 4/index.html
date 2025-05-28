@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechHub SA - Home</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand fw-bold animate__animated animate__fadeInLeft" href="index.html">
+                <i class="fas fa-bolt me-2"></i>TechHub SA
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow-1">
+        <!-- Hero Carousel -->
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="bg-gradient bg-primary text-white py-5" style="height: 400px;">
+                        <div class="container h-100 d-flex align-items-center">
+                            <div class="row w-100">
+                                <div class="col-lg-6">
+                                    <h1 class="display-4 fw-bold animate__animated animate__fadeInUp">Welcome to TechHub SA</h1>
+                                    <p class="lead animate__animated animate__fadeInUp animate__delay-1s">South Africa's premier electronics destination</p>
+                                    <a href="products.html" class="btn btn-light btn-lg animate__animated animate__fadeInUp animate__delay-2s">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="bg-gradient bg-success text-white py-5" style="height: 400px;">
+                        <div class="container h-100 d-flex align-items-center">
+                            <div class="row w-100">
+                                <div class="col-lg-6">
+                                    <h1 class="display-4 fw-bold">Latest Technology</h1>
+                                    <p class="lead">Discover cutting-edge gadgets and electronics</p>
+                                    <a href="products.html" class="btn btn-light btn-lg">Explore</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="bg-gradient bg-info text-white py-5" style="height: 400px;">
+                        <div class="container h-100 d-flex align-items-center">
+                            <div class="row w-100">
+                                <div class="col-lg-6">
+                                    <h1 class="display-4 fw-bold">Best Prices</h1>
+                                    <p class="lead">Competitive prices across South Africa</p>
+                                    <a href="products.html" class="btn btn-light btn-lg">View Deals</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <!-- Alert Section -->
+        <div class="container my-4">
+            <div class="alert alert-warning alert-dismissible fade show animate__animated animate__bounceIn" role="alert">
+                <i class="fas fa-fire me-2"></i>
+                <strong>Limited Time Offer!</strong> Get 15% off on all smartphones this month. Use code: SAVE15
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm animate__animated animate__fadeInLeft">
+                        <div class="card-body text-center">
+                            <i class="fas fa-shipping-fast fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title">Fast Delivery</h5>
+                            <p class="card-text">Free delivery across major South African cities within 2-3 business days.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm animate__animated animate__fadeInUp">
+                        <div class="card-body text-center">
+                            <i class="fas fa-shield-alt fa-3x text-success mb-3"></i>
+                            <h5 class="card-title">Warranty Guarantee</h5>
+                            <p class="card-text">All products come with manufacturer warranty and our 30-day return policy.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm animate__animated animate__fadeInRight">
+                        <div class="card-body text-center">
+                            <i class="fas fa-headset fa-3x text-info mb-3"></i>
+                            <h5 class="card-title">24/7 Support</h5>
+                            <p class="card-text">Our customer support team is available round the clock to assist you.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Products Preview -->
+        <div class="container my-5">
+            <h2 class="text-center mb-4 animate__animated animate__fadeInDown">Featured Products</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card animate__animated animate__zoomIn">
+                        <div class="bg-light" style="height: 200px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-mobile-alt fa-4x text-muted"></i>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">Samsung Galaxy S24</h6>
+                            <p class="card-text text-primary fw-bold">R 18,999</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card animate__animated animate__zoomIn animate__delay-1s">
+                        <div class="bg-light" style="height: 200px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-laptop fa-4x text-muted"></i>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">MacBook Air M3</h6>
+                            <p class="card-text text-primary fw-bold">R 24,999</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card animate__animated animate__zoomIn animate__delay-2s">
+                        <div class="bg-light" style="height: 200px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-headphones fa-4x text-muted"></i>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">Sony WH-1000XM5</h6>
+                            <p class="card-text text-primary fw-bold">R 7,999</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card animate__animated animate__zoomIn animate__delay-3s">
+                        <div class="bg-light" style="height: 200px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-tablet-alt fa-4x text-muted"></i>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">iPad Pro 12.9"</h6>
+                            <p class="card-text text-primary fw-bold">R 21,999</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="products.html" class="btn btn-primary btn-lg animate__animated animate__pulse animate__infinite">View All Products</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>TechHub SA</h5>
+                    <p>Your trusted electronics partner in South Africa</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2025 TechHub SA. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
